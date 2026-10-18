@@ -1,6 +1,6 @@
 package br.edu.ifpr.pgua.eic.tads.controllers;
 
-import br.edu.ifpr.pgua.eic.tads.models.entities.Gerenciador;
+import br.edu.ifpr.pgua.eic.tads.models.Gerenciador;
 import io.javalin.http.Context;
 
 public class CadastroController {

@@ -2,7 +2,7 @@ package br.edu.ifpr.pgua.eic.tads;
 
 import br.edu.ifpr.pgua.eic.tads.controllers.CadastroController;
 import br.edu.ifpr.pgua.eic.tads.controllers.IndexController;
-import br.edu.ifpr.pgua.eic.tads.models.entities.Gerenciador;
+import br.edu.ifpr.pgua.eic.tads.models.Gerenciador;
 import br.edu.ifpr.pgua.eic.tads.utils.JavalinUtils;
 
 /**
@@ -20,8 +20,8 @@ public class App {
 
         app.get("/",indexController::get);
     
-        app.get("/usuarios/cadastro", cadastroController::get);
-        app.post("/usuarios/cadastro", cadastroController::post);
+        app.get("/cadastro", cadastroController::get);
+        app.post("/cadastro", cadastroController::post);
 
     }
 }
