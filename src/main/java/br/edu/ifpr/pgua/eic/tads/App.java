@@ -23,5 +23,8 @@ public class App {
         app.get("/cadastro", cadastroController::get);
         app.post("/cadastro", cadastroController::post);
 
+        app.get("/cadastro-funcionario", cadastroController::getFuncionario);
+        app.post("/cadastro-funcionario", cadastroController::postFuncionario);
+       
     }
 }

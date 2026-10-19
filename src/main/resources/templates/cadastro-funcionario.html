@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Funcionario</title>
+</head>
+<body>
+ 
+      <h1>Cadastro de Funcionario!!!</h1>
+    <form action="/cadastro-funcionario" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome"/><br/>
+
+        <label for="cargo">Cargo:</label>
+        <input type="text" name="cargo" id="cargo"/><br/>
+
+        <label for="salario">Salario:</label>
+        <input type="text" name="salario" id="salario"/><br/>
+
+        <label for="turno">Turno:</label>
+        <select name="turno" id="turno" required>
+            <option value="" disabled selected>Selecione o turno...</option>
+            <option value="Matutino">Matutino</option>
+            <option value="Vespertino">Vespertino</option>
+            <option value="Noturno">Noturno</option>
+        </select><br/>
+
+        <button type="submit">Salvar</button>
+    </form>  
+
+</body>
+</html>
